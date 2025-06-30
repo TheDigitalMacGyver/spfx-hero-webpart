@@ -62,9 +62,11 @@ spfx-hero-webpart/
 
 Upload the generated .sppkg file from sharepoint/solution to your App Catalog.
 
-##Call to Action
+## Call to Action
+
 Raise your SharePoint pages to hero status. Get in touch:
-~Visit: https://digitalmacgyver.com
-~Email: scottellis@digitalmacgyver.com
+- Visit: https://digitalmacgyver.com
+- Email: scottellis@digitalmacgyver.com
+
 Questions? Ideas? Let’s make it yours!
    
