@@ -1,30 +1,66 @@
-# spfx-hero-webpart
-Purpose •  Sample SPFx project with React and Fluent UI
+# SPFx Hero Web Part
 
-This repo demonstrates a modern SharePoint hero web part built with the SharePoint Framework (SPFx), React, and Fluent UI.
+Bring a hero section to your SharePoint pages.
 
-#Prerequisites
-Node.js v14.x LTS
-Yeoman (yo), Gulp CLI (gulp)
-@microsoft/generator-sharepoint
+Quick, hands-on starter kit.
 
-#Scaffold the Project
-npm install -g yo gulp @microsoft/generator-sharepoint
-mkdir spfx-hero-webpart && cd spfx-hero-webpart
-yo @microsoft/sharepoint
+## Who this is for
 
+- You need a bold intro section on SharePoint.
+- You use SPFx with React and Fluent UI.
+- You want a ready-to-go web part.
+
+## What you get
+
+- Boilerplate SPFx solution
+- React component for hero layout
+- Fluent UI styling
+- Build and deploy scripts
+
+## Prerequisites
+
+- Node.js v14 LTS
+- Yeoman, Gulp CLI
+- @microsoft/generator-sharepoint
+- SharePoint Online tenant
+
+## Setup steps
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/your-org/spfx-hero-webpart.git
+   cd spfx-hero-webpart
+
+2. Clone the repo
+   ```bash
+   npm install
+
+3. Trust dev certificate
+   ```bash
+   gulp trust-dev-cert
+   
+4. Start local workbench
+   ```bash
+   gulp serve
+   
+Open your tenant workbench URL in the browser.
+
+## Project Layout
 spfx-hero-webpart/
-│   README.md
-│   package.json
-│   tsconfig.json
-│   gulpfile.js
-│
-└───src/
-    └───webparts/
-        └───hero/
-            │ HeroWebPart.ts
-            │ HeroWebPart.manifest.json
-            │
-            └───components/
-                │ IHeroProps.ts
-                │ Hero.tsx
+├── config
+└── src/webparts/hero/
+    ├── HeroWebPart.ts            # Renders React component
+    ├── HeroWebPart.manifest.json
+    └── components/
+        ├── Hero.tsx              # UI logic
+        └── IHeroProps.ts         # Prop types
+
+##Build and deploy
+    npm run build
+    npm run bundle --ship
+    npm run package-solution --ship
+
+Upload the generated .sppkg file from sharepoint/solution to your App Catalog.
+
+   
+   
