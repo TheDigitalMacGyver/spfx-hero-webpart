@@ -17,4 +17,8 @@ export default class HeroWebPart extends BaseClientSideWebPart<IHeroWebPartProps
 
     ReactDom.render(element, this.domElement);
   }
+
+  protected onDispose(): void {
+    ReactDom.unmountComponentAtNode(this.domElement);
+  }
 }
